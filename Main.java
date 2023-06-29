@@ -107,12 +107,6 @@ public class Main {
                 validateNumArgs(args,3);
                 GitletRepository.pull(args[1],args[2]);
                 break;
-            case "test":
-                String path="D:/gitdesk/test/.gitlet";
-                //File remote_head_file=Utils.join(path,"HEAD");
-                //Head remote_head=Utils.readObject(remote_head_file, Head.class);
-                File remote_stage_file=Utils.join(path,"stage");
-                Stage remote_head=Utils.readObject(remote_stage_file, Stage.class);
 
             default:
                 System.out.println("No command with that name exists.");
